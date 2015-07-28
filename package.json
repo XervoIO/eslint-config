@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-modulus",
+  "version": "0.0.0",
+  "description": "JavaScript Modulus Style - ESLint Shareable Config",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^1.0.0-rc-1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "modulus",
+    "style checker",
+    "code style",
+    "code checker",
+    "code linter",
+    "style linter",
+    "simple",
+    "policy",
+    "style",
+    "code",
+    "lint",
+    "eslint",
+    "eslintconfig",
+    "jshint",
+    "jscs",
+    "hint",
+    "enforce",
+    "check",
+    "verify",
+    "quality",
+    "checker",
+    "code standards"
+  ],
+  "author": "Jack Boberg <jack@modulus.io> (http://modulus.io/)",
+  "license": "MIT"
+}
