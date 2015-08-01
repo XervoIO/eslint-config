@@ -3,25 +3,25 @@ module.exports = {
 
   "ecmaFeatures": {
     "arrowFunctions": false,                    // enable arrow functions
-    "binaryLiterals": false,                    // enable binary literals
+    "binaryLiterals": true,                     // enable binary literals
     "blockBindings": true,                      // enable let and const (aka block bindings)
-    "classes": false,                           // enable classes
+    "classes": true,                            // enable classes
     "defaultParams": false,                     // enable default function parameters
     "destructuring": false,                     // enable destructuring
-    "forOf": false,                             // enable for-of loops
-    "generators": false,                        // enable generators
+    "forOf": true,                              // enable for-of loops
+    "generators": true,                         // enable generators
     "modules": false,                           // enable modules and global strict mode
     "objectLiteralComputedProperties": false,   // enable computed object literal property names
     "objectLiteralDuplicateProperties": false,  // enable duplicate object literal properties in strict mode
-    "objectLiteralShorthandMethods": false,     // enable object literal shorthand methods
-    "objectLiteralShorthandProperties": false,  // enable object literal shorthand properties
-    "octalLiterals": false,                     // enable octal literals
+    "objectLiteralShorthandMethods": true,      // enable object literal shorthand methods
+    "objectLiteralShorthandProperties": true,   // enable object literal shorthand properties
+    "octalLiterals": true,                      // enable octal literals
     "regexUFlag": false,                        // enable the regular expression u flag
     "regexYFlag": false,                        // enable the regular expression y flag
     "restParams": false,                        // enable the rest parameters
     "spread": false,                            // enable the spread operator
     "superInFunctions": false,                  // enable super references inside of functions
-    "templateStrings": false,                   // enable template strings
+    "templateStrings": true,                    // enable template strings
     "unicodeCodePointEscapes": false,           // enable code point escapes
     "globalReturn": false,                      // allow return statements in the global scope
     "jsx": false                                // enable JSX
