@@ -4,7 +4,8 @@
   "description": "JavaScript Modulus Style - ESLint Shareable Config",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^1.0.0-rc-1"
+    "eslint": "^1.2.0",
+    "eslint-plugin-hapi": "1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -35,7 +36,8 @@
   ],
   "author": "Jack Boberg <jack@modulus.io> (http://modulus.io/)",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "eslint": "^1.2.0",
     "eslint-plugin-hapi": "1.2.0"
   }
 }
