@@ -34,5 +34,8 @@
     "code standards"
   ],
   "author": "Jack Boberg <jack@modulus.io> (http://modulus.io/)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "eslint-plugin-hapi": "1.2.0"
+  }
 }
