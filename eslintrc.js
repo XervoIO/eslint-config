@@ -162,13 +162,13 @@ module.exports = {
 
     ////////// Node.js //////////
 
-    "handle-callback-err": 0,   // enforces error handling in callbacks (off by default) (on by default in the node environment)
-    "no-mixed-requires": 0,     // disallow mixing regular variable and require declarations (off by default) (on by default in the node environment)
-    "no-new-require": 0,        // disallow use of new operator with the require function (off by default) (on by default in the node environment)
-    "no-path-concat": 0,        // disallow string concatenation with __dirname and __filename (off by default) (on by default in the node environment)
-    "no-process-exit": 0,       // disallow process.exit() (on by default in the node environment)
+    "handle-callback-err": 2,   // enforces error handling in callbacks (off by default) (on by default in the node environment)
+    "no-mixed-requires": 2,     // disallow mixing regular variable and require declarations (off by default) (on by default in the node environment)
+    "no-new-require": 2,        // disallow use of new operator with the require function (off by default) (on by default in the node environment)
+    "no-path-concat": 2,        // disallow string concatenation with __dirname and __filename (off by default) (on by default in the node environment)
+    "no-process-exit": 2,       // disallow process.exit() (on by default in the node environment)
     "no-restricted-modules": 0, // restrict usage of specified node modules (off by default)
-    "no-sync": 0,               // disallow use of synchronous methods (off by default)
+    "no-sync": 1,               // disallow use of synchronous methods (off by default)
 
 
     ////////// Stylistic Issues //////////
