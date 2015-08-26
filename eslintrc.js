@@ -215,7 +215,7 @@ module.exports = {
     "sort-vars": 0,                   // sort variables within the same declaration block (off by default)
     "space-after-keywords": 0,        // require a space after certain keywords (off by default)
     "space-before-blocks": 0,         // require or disallow space before blocks (off by default)
-    "space-before-function-paren": 0, // require or disallow space before function opening parenthesis (off by default)
+    "space-before-function-paren": { "anonymous": "always", "named": "never" }, // require or disallow space before function opening parenthesis (off by default)
     "space-in-parens": 0,             // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 0,             // require spaces around operators
     "space-return-throw-case": 0,     // require a space after return, throw, and case
