@@ -189,7 +189,7 @@ module.exports = {
     "func-names": 0,                  // require function expressions to have a name (off by default)
     "func-style": 0,                  // enforces use of function declarations or expressions (off by default)
     "indent": [2, 2],                 // this option sets a specific tab width for your code (off by default)
-    "key-spacing": 0,                 // enforces spacing between keys and values in object literal properties
+    "key-spacing": [2, { "beforeColon": false, "afterColon": true }], // enforces spacing between keys and values in object literal properties
     "lines-around-comment": 0,        // enforces empty lines around comments (off by default)
     "linebreak-style": 0,             // disallow mixed 'LF' and 'CRLF' as linebreaks (off by default)
     "max-nested-callbacks": 0,        // specify the maximum depth callbacks can be nested (off by default)
