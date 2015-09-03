@@ -49,10 +49,15 @@ module.exports = {
   },
 
   "plugins": [
-    // e.g. "react" (must run `npm install eslint-plugin-react` first)
+    "hapi"
   ],
 
   "rules": {
+    ////////// hapi //////////
+    "hapi/hapi-capitalize-modules": 2,                           // enforce the capitalization of imported module variables
+    "hapi/hapi-scope-start": 0,                                  // enforce new line at the beginning of function scope
+    "hapi/no-shadow-relaxed": [2, { ignore: ["err", "error"] }], // wraps the existing no-shadow eslint rule with an extra option for ignore
+
     ////////// Possible Errors //////////
 
     "comma-dangle": [2, "never"],               // disallow trailing commas in object literals
