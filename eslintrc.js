@@ -179,7 +179,7 @@ module.exports = {
     ////////// Stylistic Issues //////////
 
     "array-bracket-spacing": 0,       // enforce spacing inside array brackets (off by default)
-    "brace-style": 0,                 // enforce one true brace style (off by default)
+    "brace-style": 2,                 // enforce one true brace style (off by default)
     "camelcase": 0,                   // require camel case names
     "comma-spacing": 0,               // enforce spacing before and after comma
     "comma-style": 0,                 // enforce one true comma style (off by default)
