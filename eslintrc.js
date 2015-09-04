@@ -204,7 +204,7 @@ module.exports = {
     "no-multiple-empty-lines": [2, { max: 1 }], // disallow multiple empty lines (off by default)
     "no-nested-ternary": 2,           // disallow nested ternary expressions (off by default)
     "no-new-object": 0,               // disallow use of the Object constructor
-    "no-spaced-func": 0,              // disallow space between function identifier and application
+    "no-spaced-func": 2,              // disallow space between function identifier and application
     "no-ternary": 0,                  // disallow the use of ternary operators (off by default)
     "no-trailing-spaces": 0,          // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 2,        // disallow dangling underscores in identifiers
