@@ -202,7 +202,7 @@ module.exports = {
     "no-lonely-if": 2,                // disallow if as the only statement in an else block (off by default)
     "no-mixed-spaces-and-tabs": 2,    // disallow mixed spaces and tabs for indentation
     "no-multiple-empty-lines": [2, { max: 1 }], // disallow multiple empty lines (off by default)
-    "no-nested-ternary": 0,           // disallow nested ternary expressions (off by default)
+    "no-nested-ternary": 2,           // disallow nested ternary expressions (off by default)
     "no-new-object": 0,               // disallow use of the Object constructor
     "no-spaced-func": 0,              // disallow space between function identifier and application
     "no-ternary": 0,                  // disallow the use of ternary operators (off by default)
