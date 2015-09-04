@@ -206,7 +206,7 @@ module.exports = {
     "no-new-object": 0,               // disallow use of the Object constructor
     "no-spaced-func": 2,              // disallow space between function identifier and application
     "no-ternary": 0,                  // disallow the use of ternary operators (off by default)
-    "no-trailing-spaces": 0,          // disallow trailing whitespace at the end of lines
+    "no-trailing-spaces": 2,          // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 2,        // disallow dangling underscores in identifiers
     "one-var": 0,                     // allow just one var statement per function (off by default)
     "operator-assignment": 0,         // require assignment operator shorthand where possible or prohibit it entirely (off by default)
