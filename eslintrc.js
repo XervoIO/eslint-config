@@ -199,7 +199,7 @@ module.exports = {
     "no-array-constructor": 0,        // disallow use of the Array constructor
     "no-continue": 0,                 // disallow use of the continue statement (off by default)
     "no-inline-comments": 0,          // disallow comments inline after code (off by default)
-    "no-lonely-if": 0,                // disallow if as the only statement in an else block (off by default)
+    "no-lonely-if": 2,                // disallow if as the only statement in an else block (off by default)
     "no-mixed-spaces-and-tabs": 0,    // disallow mixed spaces and tabs for indentation
     "no-multiple-empty-lines": 0,     // disallow multiple empty lines (off by default)
     "no-nested-ternary": 0,           // disallow nested ternary expressions (off by default)
