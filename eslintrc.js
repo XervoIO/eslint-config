@@ -193,7 +193,7 @@ module.exports = {
     "lines-around-comment": 0,        // enforces empty lines around comments (off by default)
     "linebreak-style": 0,             // disallow mixed 'LF' and 'CRLF' as linebreaks (off by default)
     "max-nested-callbacks": 0,        // specify the maximum depth callbacks can be nested (off by default)
-    "new-cap": 0,                     // require a capital letter for constructors
+    "new-cap": [2, { "newIsCap": true, "capIsNew": false }], // require a capital letter for constructors
     "new-parens": 0,                  // disallow the omission of parentheses when invoking a constructor with no arguments
     "newline-after-var": 0,           // allow/disallow an empty newline after var statement (off by default)
     "no-array-constructor": 0,        // disallow use of the Array constructor
