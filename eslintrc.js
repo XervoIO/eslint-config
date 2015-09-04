@@ -211,7 +211,7 @@ module.exports = {
     "one-var": 0,                     // allow just one var statement per function (off by default)
     "operator-assignment": 0,         // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "operator-linebreak": 0,          // enforce operators to be placed before or after line breaks (off by default)
-    "padded-blocks": 0,               // enforce padding within blocks (off by default)
+    "padded-blocks": [2, "never"],    // enforce padding within blocks (off by default)
     "quote-props": 0,                 // require quotes around object literal property names (off by default)
     "quotes": 0,                      // specify whether double or single quotes should be used
     "semi-spacing": 0,                // enforce spacing before and after semicolons
