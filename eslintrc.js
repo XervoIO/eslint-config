@@ -213,7 +213,7 @@ module.exports = {
     "operator-linebreak": 0,          // enforce operators to be placed before or after line breaks (off by default)
     "padded-blocks": [2, "never"],    // enforce padding within blocks (off by default)
     "quote-props": 0,                 // require quotes around object literal property names (off by default)
-    "quotes": 0,                      // specify whether double or single quotes should be used
+    "quotes": [2, "single", "avoid-escape"], // specify whether double or single quotes should be used
     "semi-spacing": 0,                // enforce spacing before and after semicolons
     "semi": 0,                        // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                   // sort variables within the same declaration block (off by default)
