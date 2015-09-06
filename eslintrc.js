@@ -155,7 +155,7 @@ module.exports = {
 
     "no-catch-shadow": 0,             // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
     "no-delete-var": 2,               // disallow deletion of variables
-    "no-label-var": 0,                // disallow labels that share a name with a variable
+    "no-label-var": 2,                // disallow labels that share a name with a variable
     "no-shadow": 0,                   // disallow declaration of variables already declared in the outer scope
     "no-shadow-restricted-names": 0,  // disallow shadowing of names such as arguments
     "no-undef": 0,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
