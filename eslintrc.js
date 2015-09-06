@@ -161,7 +161,7 @@ module.exports = {
     "no-undef": 2,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undef-init": 2,               // disallow use of undefined when initializing variables
     "no-undefined": 2,                // disallow use of undefined variable (off by default)
-    "no-unused-vars": 0,              // disallow declaration of variables that are not used in the code
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}], // disallow declaration of variables that are not used in the code
     "no-use-before-define": 0,        // disallow use of variables before they are defined
 
 
