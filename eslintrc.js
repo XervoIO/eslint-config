@@ -215,7 +215,7 @@ module.exports = {
     "quote-props": 0,                 // require quotes around object literal property names (off by default)
     "quotes": [2, "single", "avoid-escape"], // specify whether double or single quotes should be used
     "semi-spacing": 0,                // enforce spacing before and after semicolons
-    "semi": 0,                        // require or disallow use of semicolons instead of ASI
+    "semi": 2,                        // require or disallow use of semicolons instead of ASI
     "sort-vars": 0,                   // sort variables within the same declaration block (off by default)
     "space-after-keywords": [2, "always"], // require a space after certain keywords (off by default)
     "space-before-blocks": [2, "always"], // require or disallow space before blocks (off by default)
