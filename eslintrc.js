@@ -103,7 +103,7 @@ module.exports = {
     "dot-location": [2, "property"], // enforces consistent newlines before or after dots (off by default)
     "eqeqeq": [2, "allow-null"], // require the use of === and !==
     "guard-for-in": 2,          // make sure for-in loops have an if statement (off by default)
-    "no-alert": 0,              // disallow the use of alert, confirm, and prompt
+    "no-alert": 2,              // disallow the use of alert, confirm, and prompt
     "no-caller": 0,             // disallow use of arguments.caller or arguments.callee
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
     "no-else-return": 0,        // disallow else after a return in an if (off by default)
