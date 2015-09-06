@@ -101,7 +101,7 @@ module.exports = {
     "default-case": 2,          // require default case in switch statements (off by default)
     "dot-notation": 0,          // encourages use of dot notation whenever possible
     "dot-location": [2, "property"], // enforces consistent newlines before or after dots (off by default)
-    "eqeqeq": 0,                // require the use of === and !==
+    "eqeqeq": [2, "allow-null"], // require the use of === and !==
     "guard-for-in": 0,          // make sure for-in loops have an if statement (off by default)
     "no-alert": 0,              // disallow the use of alert, confirm, and prompt
     "no-caller": 0,             // disallow use of arguments.caller or arguments.callee
