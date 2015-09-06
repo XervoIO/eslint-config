@@ -94,7 +94,7 @@ module.exports = {
     ////////// Best Practices //////////
 
     "accessor-pairs": 0,        // enforces getter/setter pairs in objects (off by default)
-    "block-scoped-var": 0,      // treat var statements as if they were block scoped (off by default)
+    "block-scoped-var": 2,      // treat var statements as if they were block scoped (off by default)
     "complexity": 0,            // specify the maximum cyclomatic complexity allowed in a program (off by default)
     "consistent-return": 0,     // require return statements to either always or never specify values
     "curly": [2, "multi-line"], // Single-line no curlys; multiline requires curly
