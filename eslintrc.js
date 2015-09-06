@@ -98,7 +98,7 @@ module.exports = {
     "complexity": 0,            // specify the maximum cyclomatic complexity allowed in a program (off by default)
     "consistent-return": 2,     // require return statements to either always or never specify values
     "curly": [2, "multi-line"], // Single-line no curlys; multiline requires curly
-    "default-case": 0,          // require default case in switch statements (off by default)
+    "default-case": 2,          // require default case in switch statements (off by default)
     "dot-notation": 0,          // encourages use of dot notation whenever possible
     "dot-location": 0,          // enforces consistent newlines before or after dots (off by default)
     "eqeqeq": 0,                // require the use of === and !==
