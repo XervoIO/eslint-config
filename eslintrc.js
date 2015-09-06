@@ -100,7 +100,7 @@ module.exports = {
     "curly": [2, "multi-line"], // Single-line no curlys; multiline requires curly
     "default-case": 2,          // require default case in switch statements (off by default)
     "dot-notation": 0,          // encourages use of dot notation whenever possible
-    "dot-location": 0,          // enforces consistent newlines before or after dots (off by default)
+    "dot-location": [2, "property"], // enforces consistent newlines before or after dots (off by default)
     "eqeqeq": 0,                // require the use of === and !==
     "guard-for-in": 0,          // make sure for-in loops have an if statement (off by default)
     "no-alert": 0,              // disallow the use of alert, confirm, and prompt
