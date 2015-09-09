@@ -132,7 +132,7 @@ module.exports = {
     "no-proto": 2,              // disallow usage of __proto__ property
     "no-redeclare": 2,          // disallow declaring the same variable more then once
     "no-return-assign": 2,      // disallow use of assignment in return statement
-    "no-script-url": 0,         // disallow use of javascript: urls
+    "no-script-url": 2,         // disallow use of javascript: urls
     "no-self-compare": 0,       // disallow comparisons where both sides are exactly the same (off by default)
     "no-sequences": 0,          // disallow use of comma operator
     "no-throw-literal": 0,      // restrict what can be thrown as an exception (off by default)
