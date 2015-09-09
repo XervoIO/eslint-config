@@ -114,7 +114,7 @@ module.exports = {
     "no-extra-bind": 2,         // disallow unnecessary function binding
     "no-fallthrough": 2,        // disallow fallthrough of case statements
     "no-floating-decimal": 2,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
-    "no-implied-eval": 0,       // disallow use of eval()-like methods
+    "no-implied-eval": 2,       // disallow use of eval()-like methods
     "no-iterator": 0,           // disallow usage of __iterator__ property
     "no-labels": 0,             // disallow use of labeled statements
     "no-lone-blocks": 0,        // disallow unnecessary nested blocks
