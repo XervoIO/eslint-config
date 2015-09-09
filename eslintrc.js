@@ -106,7 +106,7 @@ module.exports = {
     "no-alert": 2,              // disallow the use of alert, confirm, and prompt
     "no-caller": 2,             // disallow use of arguments.caller or arguments.callee
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
-    "no-else-return": 0,        // disallow else after a return in an if (off by default)
+    "no-else-return": 2,        // disallow else after a return in an if (off by default)
     "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
     "no-eq-null": 0,            // disallow comparisons to null without a type-checking operator (off by default)
     "no-eval": 0,               // disallow use of eval()
