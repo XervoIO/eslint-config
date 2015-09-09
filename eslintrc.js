@@ -121,7 +121,7 @@ module.exports = {
     "no-loop-func": 2,          // disallow creation of functions within loops
     "no-multi-spaces": 2,       // disallow use of multiple spaces
     "no-multi-str": 2,          // disallow use of multiline strings
-    "no-native-reassign": 0,    // disallow reassignments of native objects
+    "no-native-reassign": 2,    // disallow reassignments of native objects
     "no-new-func": 0,           // disallow use of new operator for Function object
     "no-new-wrappers": 0,       // disallows creating new instances of String, Number, and Boolean
     "no-new": 0,                // disallow use of new operator when not part of the assignment or comparison
