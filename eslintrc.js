@@ -111,7 +111,7 @@ module.exports = {
     "no-eq-null": 0,            // disallow comparisons to null without a type-checking operator (off by default)
     "no-eval": 2,               // disallow use of eval()
     "no-extend-native": 0,      // disallow adding to native types
-    "no-extra-bind": 0,         // disallow unnecessary function binding
+    "no-extra-bind": 2,         // disallow unnecessary function binding
     "no-fallthrough": 0,        // disallow fallthrough of case statements
     "no-floating-decimal": 0,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
     "no-implied-eval": 0,       // disallow use of eval()-like methods
