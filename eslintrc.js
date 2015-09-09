@@ -118,7 +118,7 @@ module.exports = {
     "no-iterator": 2,           // disallow usage of __iterator__ property
     "no-labels": 0,             // disallow use of labeled statements
     "no-lone-blocks": 2,        // disallow unnecessary nested blocks
-    "no-loop-func": 0,          // disallow creation of functions within loops
+    "no-loop-func": 2,          // disallow creation of functions within loops
     "no-multi-spaces": 0,       // disallow use of multiple spaces
     "no-multi-str": 0,          // disallow use of multiline strings
     "no-native-reassign": 0,    // disallow reassignments of native objects
