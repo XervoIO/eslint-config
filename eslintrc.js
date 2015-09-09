@@ -130,7 +130,7 @@ module.exports = {
     "no-param-reassign": 0,     // disallow reassignment of function parameters (off by default)
     "no-process-env": 1,        // disallow use of process.env (off by default)
     "no-proto": 2,              // disallow usage of __proto__ property
-    "no-redeclare": 0,          // disallow declaring the same variable more then once
+    "no-redeclare": 2,          // disallow declaring the same variable more then once
     "no-return-assign": 0,      // disallow use of assignment in return statement
     "no-script-url": 0,         // disallow use of javascript: urls
     "no-self-compare": 0,       // disallow comparisons where both sides are exactly the same (off by default)
