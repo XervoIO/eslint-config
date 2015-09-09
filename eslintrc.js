@@ -109,7 +109,7 @@ module.exports = {
     "no-else-return": 2,        // disallow else after a return in an if (off by default)
     "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
     "no-eq-null": 0,            // disallow comparisons to null without a type-checking operator (off by default)
-    "no-eval": 0,               // disallow use of eval()
+    "no-eval": 2,               // disallow use of eval()
     "no-extend-native": 0,      // disallow adding to native types
     "no-extra-bind": 0,         // disallow unnecessary function binding
     "no-fallthrough": 0,        // disallow fallthrough of case statements
