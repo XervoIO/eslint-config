@@ -140,7 +140,7 @@ module.exports = {
     "no-void": 0,               // disallow use of void operator (off by default)
     "no-warning-comments": 0,   // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME (off by default)
     "no-with": 0,               // disallow use of the with statement
-    "radix": 0,                 // require use of the second argument for parseInt() (off by default)
+    "radix": 2,                 // require use of the second argument for parseInt() (off by default)
     "vars-on-top": 0,           // requires to declare all vars on top of their containing scope (off by default)
     "wrap-iife": 0,             // require immediate function invocation to be wrapped in parentheses (off by default)
     "yoda": 0,                  // require or disallow Yoda conditions
