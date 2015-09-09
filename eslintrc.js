@@ -125,7 +125,7 @@ module.exports = {
     "no-new-func": 0,           // disallow use of new operator for Function object
     "no-new-wrappers": 2,       // disallows creating new instances of String, Number, and Boolean
     "no-new": 0,                // disallow use of new operator when not part of the assignment or comparison
-    "no-octal-escape": 0,       // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
+    "no-octal-escape": 2,       // disallow use of octal escape sequences in string literals, such as var foo = "Copyright \251";
     "no-octal": 0,              // disallow use of octal literals
     "no-param-reassign": 0,     // disallow reassignment of function parameters (off by default)
     "no-process-env": 0,        // disallow use of process.env (off by default)
