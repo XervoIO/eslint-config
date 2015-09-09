@@ -136,7 +136,7 @@ module.exports = {
     "no-self-compare": 2,       // disallow comparisons where both sides are exactly the same (off by default)
     "no-sequences": 0,          // disallow use of comma operator
     "no-throw-literal": 2,      // restrict what can be thrown as an exception (off by default)
-    "no-unused-expressions": 0, // disallow usage of expressions in statement position
+    "no-unused-expressions": 2, // disallow usage of expressions in statement position
     "no-void": 0,               // disallow use of void operator (off by default)
     "no-warning-comments": 0,   // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME (off by default)
     "no-with": 0,               // disallow use of the with statement
