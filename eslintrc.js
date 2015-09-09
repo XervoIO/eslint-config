@@ -142,7 +142,7 @@ module.exports = {
     "no-with": 0,               // disallow use of the with statement
     "radix": 2,                 // require use of the second argument for parseInt() (off by default)
     "vars-on-top": 2,           // requires to declare all vars on top of their containing scope (off by default)
-    "wrap-iife": 0,             // require immediate function invocation to be wrapped in parentheses (off by default)
+    "wrap-iife": [2, "any"],    // require immediate function invocation to be wrapped in parentheses (off by default)
     "yoda": 0,                  // require or disallow Yoda conditions
 
 
