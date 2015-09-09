@@ -4,13 +4,8 @@ JavaScript Modulus Style - [ESLint Shareable Config][shareable-configs]
 
 ## Install
 
-*TODO*: publish to npm
-
 ```bash
-cd $PROJECTS
-git clone git@github.com:onmodulus/eslint-config.git
-cd eslint-config
-npm link
+npm install eslint-config-modulus
 ```
 
 ## Usage
@@ -33,11 +28,6 @@ by ESLint.*
 
 You can override settings from the shareable config by adding them directly into
 your `.eslintrc` file.
-
-## Learn more
-
-For the full listing of rules, editor plugins, FAQs, and more, visit the main
-[JavaScript Modulus Style repo][github].
 
 ## License
 
