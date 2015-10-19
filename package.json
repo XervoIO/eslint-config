@@ -3,6 +3,13 @@
   "version": "0.1.1",
   "description": "JavaScript Modulus Style - ESLint Shareable Config",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onmodulus/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onmodulus/eslint-config/issues"
+  },
   "peerDependencies": {
     "eslint": "^1.2.0",
     "eslint-plugin-hapi": "1.2.0"
