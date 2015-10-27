@@ -44,6 +44,7 @@
   "author": "Jack Boberg <jack@modulus.io> (http://modulus.io/)",
   "license": "MIT",
   "devDependencies": {
+    "code": "~1.5.0",
     "eslint": "^1.7.3",
     "eslint-plugin-hapi": "1.2.0",
     "lab": "~6.2.0"
