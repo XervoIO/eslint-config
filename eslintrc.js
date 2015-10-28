@@ -174,7 +174,7 @@ module.exports = {
     ////////// Node.js //////////
 
     "callback-return": 2,       // enforce return after a callback
-    "global-require": 0,        // enforce require() on top-level module scope
+    "global-require": 2,        // enforce require() on top-level module scope
     "handle-callback-err": 2,   // enforces error handling in callbacks (off by default) (on by default in the node environment)
     "no-mixed-requires": 2,     // disallow mixing regular variable and require declarations (off by default) (on by default in the node environment)
     "no-new-require": 2,        // disallow use of new operator with the require function (off by default) (on by default in the node environment)
