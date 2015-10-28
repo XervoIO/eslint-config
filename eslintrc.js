@@ -141,7 +141,7 @@ module.exports = {
     "no-throw-literal": 2,      // restrict what can be thrown as an exception (off by default)
     "no-unused-expressions": 2, // disallow usage of expressions in statement position
     "no-useless-call": 1,       // disallow unnecessary .call() and .apply()
-    "no-useless-concat": 0,     // disallow unnecessary concatenation of literals or template literals
+    "no-useless-concat": 2,     // disallow unnecessary concatenation of literals or template literals
     "no-void": 0,               // disallow use of void operator (off by default)
     "no-warning-comments": 0,   // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME (off by default)
     "no-with": 0,               // disallow use of the with statement
