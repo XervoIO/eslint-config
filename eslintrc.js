@@ -237,7 +237,7 @@ module.exports = {
     "space-after-keywords": [2, "always"], // require a space after certain keywords (off by default)
     "space-before-blocks": [2, "always"], // require or disallow space before blocks (off by default)
     "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }], // require or disallow space before function opening parenthesis (off by default)
-    "space-before-keywords": 0,       // require a space before certain keywords (fixable)
+    "space-before-keywords": [2, "always"], // require a space before certain keywords (fixable)
     "space-in-parens": [2, "never"],  // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 2,             // require spaces around operators
     "space-return-throw-case": 2,     // require a space after return, throw, and case
