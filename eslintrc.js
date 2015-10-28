@@ -114,7 +114,7 @@ module.exports = {
     "no-extra-bind": 2,         // disallow unnecessary function binding
     "no-fallthrough": 2,        // disallow fallthrough of case statements
     "no-floating-decimal": 2,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
-    "no-implicit-coercion": 0,  // disallow the type conversions with shorter notations
+    "no-implicit-coercion": 2,  // disallow the type conversions with shorter notations
     "no-implied-eval": 2,       // disallow use of eval()-like methods
     "no-invalid-this": 0,       // disallow this keywords outside of classes or class-like objects
     "no-iterator": 2,           // disallow usage of __iterator__ property
