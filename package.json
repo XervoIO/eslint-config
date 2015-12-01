@@ -11,11 +11,11 @@
     "url": "https://github.com/onmodulus/eslint-config/issues"
   },
   "peerDependencies": {
-    "eslint": "^1.2.0",
+    "eslint": "~1.10.2",
     "eslint-plugin-hapi": "1.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab -c"
   },
   "keywords": [
     "modulus",
@@ -44,7 +44,9 @@
   "author": "Jack Boberg <jack@modulus.io> (http://modulus.io/)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.2.0",
-    "eslint-plugin-hapi": "1.2.0"
+    "code": "~1.5.0",
+    "eslint": "~1.10.2",
+    "eslint-plugin-hapi": "1.2.0",
+    "lab": "~6.2.0"
   }
 }
