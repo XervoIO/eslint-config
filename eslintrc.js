@@ -104,6 +104,7 @@ module.exports = {
     "guard-for-in": 2,          // make sure for-in loops have an if statement (off by default)
     "no-alert": 2,              // disallow the use of alert, confirm, and prompt
     "no-caller": 2,             // disallow use of arguments.caller or arguments.callee
+    "no-case-declarations": 0,  // disallow lexical declarations in case clauses
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
     "no-else-return": 2,        // disallow else after a return in an if (off by default)
     "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
@@ -248,10 +249,12 @@ module.exports = {
 
     ////////// ECMAScript 6 //////////
 
+    "arrow-body-style": 0,       // require braces in arrow function body
     "arrow-parens": 0,           // require parens in arrow function arguments
     "arrow-spacing": 0,          // require space before/after arrow function's arrow (fixable)
     "constructor-super": 0,      // verify super() callings in constructors (off by default)
     "generator-star-spacing": 0, // enforce the spacing around the * in generator functions (off by default)
+    "no-arrow-condition": 0,     // disallow arrow functions where a condition is expected
     "no-this-before-super": 0,   // disallow to use this/super before super() calling in constructors (off by default)
     "no-var": 0,                 // require let or const instead of var (off by default)
     "object-shorthand": 0,       // require method and property shorthand syntax for object literals (off by default)
