@@ -12,7 +12,8 @@
   },
   "peerDependencies": {
     "eslint": "~1.10.2",
-    "eslint-plugin-hapi": "1.2.0"
+    "eslint-plugin-hapi": "1.2.0",
+    "eslint-plugin-promiseparams": "1.0.7"
   },
   "scripts": {
     "test": "lab -c"
@@ -47,6 +48,7 @@
     "code": "~1.5.0",
     "eslint": "~1.10.2",
     "eslint-plugin-hapi": "1.2.0",
+    "eslint-plugin-promiseparams": "1.0.7",
     "lab": "~6.2.0"
   }
 }
