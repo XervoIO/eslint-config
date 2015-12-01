@@ -49,7 +49,8 @@ module.exports = {
   },
 
   "plugins": [
-    "hapi"
+    "hapi",
+    "promiseparams"
   ],
 
   "rules": {
@@ -57,6 +58,9 @@ module.exports = {
     "hapi/hapi-capitalize-modules": 2,                           // enforce the capitalization of imported module variables
     "hapi/hapi-scope-start": 0,                                  // enforce new line at the beginning of function scope
     "hapi/no-shadow-relaxed": [2, { "ignore": ["err", "error"] }], // wraps the existing no-shadow eslint rule with an extra option for ignore
+
+    ////////// promiseparams //////////
+    "promiseparams/promiseparams": 2,           // enforce standard parameter names for Promise constructors
 
     ////////// Possible Errors //////////
 
