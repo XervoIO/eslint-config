@@ -55,9 +55,10 @@ module.exports = {
 
   "rules": {
     ////////// hapi //////////
-    "hapi/hapi-capitalize-modules": 2,                           // enforce the capitalization of imported module variables
-    "hapi/hapi-scope-start": 0,                                  // enforce new line at the beginning of function scope
-    "hapi/no-shadow-relaxed": [2, { "ignore": ["err", "error"] }], // wraps the existing no-shadow eslint rule with an extra option for ignore
+    "hapi/hapi-capitalize-modules": 2,  // enforce the capitalization of imported module variables
+    "hapi/hapi-for-you": 2,             // restrict iterator variable names, and nesting
+    "hapi/hapi-scope-start": 0,         // enforce new line at the beginning of function scope
+    "hapi/no-arrowception": 2,          // prevent arrow functions that implicitly create arrow functions
 
     ////////// promiseparams //////////
     "promiseparams/promiseparams": 2,           // enforce standard parameter names for Promise constructors
@@ -167,7 +168,7 @@ module.exports = {
     "no-catch-shadow": 0,             // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
     "no-delete-var": 2,               // disallow deletion of variables
     "no-label-var": 2,                // disallow labels that share a name with a variable
-    "no-shadow": 0,                   // disallow declaration of variables already declared in the outer scope
+    "no-shadow": [2, { "builtinGlobals": true, "allow": ["err", "error"] }], // disallow declaration of variables already declared in the outer scope
     "no-shadow-restricted-names": 0,  // disallow shadowing of names such as arguments
     "no-undef": 2,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
     "no-undef-init": 2,               // disallow use of undefined when initializing variables
