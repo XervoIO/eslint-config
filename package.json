@@ -49,6 +49,6 @@
     "eslint": "~1.10.3",
     "eslint-plugin-hapi": "4.0.0",
     "eslint-plugin-promiseparams": "1.0.7",
-    "lab": "~6.2.0"
+    "lab": "~8.0.2"
   }
 }
