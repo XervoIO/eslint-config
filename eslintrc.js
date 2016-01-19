@@ -2,7 +2,7 @@ module.exports = {
   // http://eslint.org/docs/rules/
 
   "ecmaFeatures": {
-    "arrowFunctions": false,                    // enable arrow functions
+    "arrowFunctions": true,                     // enable arrow functions
     "binaryLiterals": true,                     // enable binary literals
     "blockBindings": true,                      // enable let and const (aka block bindings)
     "classes": true,                            // enable classes
