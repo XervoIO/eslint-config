@@ -50,7 +50,7 @@ module.exports = {
 
   "plugins": [
     "hapi",
-    "promiseparams"
+    "promise"
   ],
 
   "rules": {
@@ -60,8 +60,10 @@ module.exports = {
     "hapi/hapi-scope-start": 0,         // enforce new line at the beginning of function scope
     "hapi/no-arrowception": 2,          // prevent arrow functions that implicitly create arrow functions
 
-    ////////// promiseparams //////////
-    "promiseparams/promiseparams": 2,           // enforce standard parameter names for Promise constructors
+    ////////// promise //////////
+    "promise/param-names": 2,   // enforce standard parameter names for Promise constructors
+    "promise/always-return": 2, // Ensure that inside a then() you make sure to return a new promise or value
+    "promise/always-catch": 2,  // Ensure that each time a then() is applied to a promise, a catch() is applied as well
 
     ////////// Possible Errors //////////
 
