@@ -129,7 +129,7 @@ module.exports = {
     "no-labels": 0,             // disallow use of labeled statements
     "no-lone-blocks": 2,        // disallow unnecessary nested blocks
     "no-loop-func": 2,          // disallow creation of functions within loops
-    "no-magic-numbers": 2,      // disallow the use of magic numbers
+    "no-magic-numbers": [2, { ignore: [-1,0,1,2] }], // disallow the use of magic numbers
     "no-multi-spaces": 2,       // disallow use of multiple spaces
     "no-multi-str": 2,          // disallow use of multiline strings
     "no-native-reassign": 2,    // disallow reassignments of native objects
