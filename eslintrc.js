@@ -114,15 +114,18 @@ module.exports = {
     "no-case-declarations": 2,  // disallow lexical declarations in case clauses
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
     "no-else-return": 2,        // disallow else after a return in an if (off by default)
+    "no-empty-function": 0,     // disallow use of empty functions
     "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
     "no-empty-pattern": 0,      // disallow use of empty destructuring patterns
     "no-eq-null": 0,            // disallow comparisons to null without a type-checking operator (off by default)
     "no-eval": 2,               // disallow use of eval()
     "no-extend-native": 0,      // disallow adding to native types
     "no-extra-bind": 2,         // disallow unnecessary function binding
+    "no-extra-label": 0,        // disallow unnecessary labels
     "no-fallthrough": 2,        // disallow fallthrough of case statements
     "no-floating-decimal": 2,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
     "no-implicit-coercion": 2,  // disallow the type conversions with shorter notations
+    "no-implicit-globals": 0,   // disallow var and named functions in global scope
     "no-implied-eval": 2,       // disallow use of eval()-like methods
     "no-invalid-this": 0,       // disallow this keywords outside of classes or class-like objects
     "no-iterator": 2,           // disallow usage of __iterator__ property
@@ -144,10 +147,13 @@ module.exports = {
     "no-redeclare": 2,          // disallow declaring the same variable more then once
     "no-return-assign": 2,      // disallow use of assignment in return statement
     "no-script-url": 2,         // disallow use of javascript: urls
+    "no-self-assign": 0,        // disallow assignments where both sides are exactly the same
     "no-self-compare": 2,       // disallow comparisons where both sides are exactly the same (off by default)
     "no-sequences": 0,          // disallow use of comma operator
     "no-throw-literal": 2,      // restrict what can be thrown as an exception (off by default)
+    "no-unmodified-loop-condition": 0, // disallow unmodified conditions of loops
     "no-unused-expressions": 2, // disallow usage of expressions in statement position
+    "no-unused-labels": 0,      // disallow unused labels
     "no-useless-call": 1,       // disallow unnecessary .call() and .apply()
     "no-useless-concat": 2,     // disallow unnecessary concatenation of literals or template literals
     "no-void": 0,               // disallow use of void operator (off by default)
@@ -188,6 +194,7 @@ module.exports = {
     "no-new-require": 2,        // disallow use of new operator with the require function (off by default) (on by default in the node environment)
     "no-path-concat": 2,        // disallow string concatenation with __dirname and __filename (off by default) (on by default in the node environment)
     "no-process-exit": 2,       // disallow process.exit() (on by default in the node environment)
+    "no-restricted-imports": 0, // restrict usage of specified node imports
     "no-restricted-modules": 0, // restrict usage of specified node modules (off by default)
     "no-sync": 1,               // disallow use of synchronous methods (off by default)
 
@@ -195,6 +202,7 @@ module.exports = {
     ////////// Stylistic Issues //////////
 
     "array-bracket-spacing": [2, "never"], // enforce spacing inside array brackets (off by default)
+    "array-callback-return": 0,       // Enforces return statements in callbacks of array's methods
     "block-spacing": [2, "always"],   // disallow or enforce spaces inside of single line blocks (fixable)
     "brace-style": 2,                 // enforce one true brace style (off by default)
     "camelcase": 0,                   // require camel case names
@@ -205,17 +213,20 @@ module.exports = {
     "eol-last": 0,                    // enforce newline at the end of file, with no multiple empty lines
     "func-names": 0,                  // require function expressions to have a name (off by default)
     "func-style": 0,                  // enforces use of function declarations or expressions (off by default)
+    "id-blacklist": 0,                // blacklist certain identifiers to prevent them being used
     "id-length": 0,                   // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     "id-match": 0,                    // require identifiers to match the provided regular expression
     "indent": [2, 2, { "SwitchCase": 1 }], // this option sets a specific tab width for your code (off by default)
     "jsx-quotes": [0, "prefer-double"], // specify whether double or single quotes should be used in JSX attributes
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }], // enforces spacing between keys and values in object literal properties
+    "keyword-spacing": 0,             // enforce spacing before and after keywords
     "lines-around-comment": 0,        // enforces empty lines around comments (off by default)
     "linebreak-style": 0,             // disallow mixed 'LF' and 'CRLF' as linebreaks (off by default)
     "max-nested-callbacks": 0,        // specify the maximum depth callbacks can be nested (off by default)
     "new-cap": [2, { "newIsCap": true, "capIsNew": false }], // require a capital letter for constructors
     "new-parens": 0,                  // disallow the omission of parentheses when invoking a constructor with no arguments
     "newline-after-var": 0,           // allow/disallow an empty newline after var statement (off by default)
+    "newline-per-chained-call": 0,    // enforce newline after each call when chaining the calls
     "no-array-constructor": 0,        // disallow use of the Array constructor
     "no-continue": 0,                 // disallow use of the continue statement (off by default)
     "no-inline-comments": 0,          // disallow comments inline after code (off by default)
@@ -231,8 +242,10 @@ module.exports = {
     "no-trailing-spaces": 2,          // disallow trailing whitespace at the end of lines
     "no-underscore-dangle": 2,        // disallow dangling underscores in identifiers
     "no-unneeded-ternary": 2,         // disallow the use of ternary operators when a simpler alternative exists
+    "no-whitespace-before-property": 0, // disallow whitespace before properties
     "object-curly-spacing": [2, "always"], // require or disallow padding inside curly braces (fixable)
     "one-var": 0,                     // allow just one var statement per function (off by default)
+    "one-var-declaration-per-line": 0, // require or disallow an newline around variable declarations
     "operator-assignment": 0,         // require assignment operator shorthand where possible or prohibit it entirely (off by default)
     "operator-linebreak": 0,          // enforce operators to be placed before or after line breaks (off by default)
     "padded-blocks": [2, "never"],    // enforce padding within blocks (off by default)
@@ -241,6 +254,7 @@ module.exports = {
     "require-jsdoc": 0,               // Require JSDoc comment
     "semi-spacing": 0,                // enforce spacing before and after semicolons
     "semi": 2,                        // require or disallow use of semicolons instead of ASI
+    "sort-imports": 0,                // sort import declarations within module
     "sort-vars": 0,                   // sort variables within the same declaration block (off by default)
     "space-after-keywords": [2, "always"], // require a space after certain keywords (off by default)
     "space-before-blocks": [2, "always"], // require or disallow space before blocks (off by default)
@@ -261,19 +275,24 @@ module.exports = {
     "arrow-spacing": 0,          // require space before/after arrow function's arrow (fixable)
     "constructor-super": 0,      // verify super() callings in constructors (off by default)
     "generator-star-spacing": 0, // enforce the spacing around the * in generator functions (off by default)
-    "no-arrow-condition": 0,     // disallow arrow functions where a condition is expected
+    "no-class-assign": 0,        // disallow modifying variables of class declarations
+    "no-confusing-arrow": 0,     // disallow arrow functions where they could be confused with comparisons
+    "no-const-assign": 0,        // disallow modifying variables that are declared using const
+    "no-dupe-class-members": 0,  // disallow duplicate name in class members
+    "no-new-symbol": 0,          // disallow use of the new operator with the Symbol object
     "no-this-before-super": 0,   // disallow to use this/super before super() calling in constructors (off by default)
+    "no-useless-constructor": 0, // disallow unnecessary constructor
     "no-var": 0,                 // require let or const instead of var (off by default)
     "object-shorthand": 0,       // require method and property shorthand syntax for object literals (off by default)
     "prefer-arrow-callback": 0,  // suggest using arrow functions as callbacks
     "prefer-const": 1,           // suggest using of const declaration for variables that are never modified after declared (off by default)
     "prefer-reflect": 0,         // suggest using Reflect methods where applicable
+    "prefer-rest-params": 0,     // suggest using the rest parameters instead of arguments
     "prefer-spread": 0,          // suggest using the spread operator instead of .apply()
     "prefer-template": 0,        // suggest using template literals instead of strings concatenation
     "require-yield": 0,          // disallow generator functions that do not have yield
-    "no-class-assign": 0,        // disallow modifying variables of class declarations
-    "no-const-assign": 0,        // disallow modifying variables that are declared using const
-    "no-dupe-class-members": 0,  // disallow duplicate name in class members
+    "template-curly-spacing": 0, // enforce spacing around embedded expressions of template strings
+    "yield-star-spacing": 0,     // enforce spacing around the * in yield* expressions
 
 
     ////////// Legacy //////////
