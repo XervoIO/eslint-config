@@ -11,7 +11,7 @@
     "url": "https://github.com/onmodulus/eslint-config/issues"
   },
   "peerDependencies": {
-    "eslint": "~1.10.3",
+    "eslint": "~2.1.0",
     "eslint-plugin-hapi": "4.0.0",
     "eslint-plugin-promise": "1.0.8"
   },
