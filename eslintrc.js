@@ -219,7 +219,7 @@ module.exports = {
     "indent": [2, 2, { "SwitchCase": 1 }], // this option sets a specific tab width for your code (off by default)
     "jsx-quotes": [0, "prefer-double"], // specify whether double or single quotes should be used in JSX attributes
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }], // enforces spacing between keys and values in object literal properties
-    "keyword-spacing": 0,             // enforce spacing before and after keywords
+    "keyword-spacing": 2,             // enforce spacing before and after keywords
     "lines-around-comment": 0,        // enforces empty lines around comments (off by default)
     "linebreak-style": 0,             // disallow mixed 'LF' and 'CRLF' as linebreaks (off by default)
     "max-nested-callbacks": 0,        // specify the maximum depth callbacks can be nested (off by default)
@@ -256,10 +256,8 @@ module.exports = {
     "semi": 2,                        // require or disallow use of semicolons instead of ASI
     "sort-imports": 0,                // sort import declarations within module
     "sort-vars": 0,                   // sort variables within the same declaration block (off by default)
-    "space-after-keywords": [2, "always"], // require a space after certain keywords (off by default)
     "space-before-blocks": [2, "always"], // require or disallow space before blocks (off by default)
     "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }], // require or disallow space before function opening parenthesis (off by default)
-    "space-before-keywords": [2, "always"], // require a space before certain keywords (fixable)
     "space-in-parens": [2, "never"],  // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 2,             // require spaces around operators
     "space-return-throw-case": 2,     // require a space after return, throw, and case
