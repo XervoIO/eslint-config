@@ -8,30 +8,36 @@ const Local = require('../eslintrc')
 
 var lab = exports.lab = Lab.script();
 
+var before = lab.before;
 var describe = lab.describe;
 var it = lab.it;
 var expect = Code.expect;
 
 describe('rules', function () {
-  it('defines all default rules', function (done) {
-    Object.keys(Defaults.rules).forEach(function (key) {
-      expect(Local.rules.hasOwnProperty(key)).to.be.true();
-    });
+  var rules;
 
+  before(function (done) {
+    rules = Local.plugins.reduce(function (rules, name) {
+      var plugin = require(Util.format('eslint-plugin-%s', name));
+      return rules.concat(Object.keys(plugin.rules).map(function (rule) {
+        return [name, rule].join('/');
+      }));
+    }, []).concat(Object.keys(Defaults.rules));
     done();
   });
 
-  it('defines all plugin rules', function (done) {
-    var plugin, rule;
 
-    Local.plugins.forEach(function (name) {
-      plugin = require(Util.format('eslint-plugin-%s', name));
-      Object.keys(plugin.rules).forEach(function (key) {
-        rule = Util.format('%s/%s', name, key);
-        expect(Local.rules.hasOwnProperty(rule)).to.be.true();
-      });
+  it('defines all rules', function (done) {
+    rules.forEach(function (rule) {
+      expect(Object.keys(Local.rules)).to.include(rule);
     });
+    done();
+  });
 
+  it('does not define other rules', function (done) {
+    Object.keys(Local.rules).forEach(function (rule) {
+      expect(rules).to.include(rule);
+    });
     done();
   });
 });
