@@ -1,5 +1,9 @@
 # Modulus - ESLint Shareable Config
 
+[![version](https://img.shields.io/npm/v/eslint-config-modulus.svg?style=flat-square)][version]
+[![build](https://img.shields.io/travis/onmodulus/eslint-config.svg?style=flat-square)][build]
+[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
+
 JavaScript Modulus Style - [ESLint Shareable Config][shareable-configs]
 
 ## Install
@@ -36,3 +40,7 @@ MIT. Copyright (c) [Modulus](https://modulus.io).
 [github]: https://github.com/onmodulus/eslint-config
 [shareable-configs]: http://eslint.org/docs/developer-guide/shareable-configs
 [badge]: https://cdn.rawgit.com/onmodulus/eslint-config/master/badge.svg
+
+[version]: https://www.npmjs.com/package/eslint-config-modulus
+[build]: https://travis-ci.org/onmodulus/eslint-config
+[license]: https://raw.githubusercontent.com/onmodulus/eslint-config/master/LICENSE
