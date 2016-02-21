@@ -259,7 +259,6 @@ module.exports = {
     "space-before-function-paren": [2, { "anonymous": "always", "named": "never" }], // require or disallow space before function opening parenthesis (off by default)
     "space-in-parens": [2, "never"],  // require or disallow spaces inside parentheses (off by default)
     "space-infix-ops": 2,             // require spaces around operators
-    "space-return-throw-case": 2,     // require a space after return, throw, and case
     "space-unary-ops": 2,             // require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     "spaced-comment": [2, "always"],  // require or disallow a space immediately following the // or /* in a comment (off by default)
     "wrap-regex": 0,                  // require regex literals to be wrapped in parentheses (off by default)
