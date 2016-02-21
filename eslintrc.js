@@ -115,7 +115,6 @@ module.exports = {
     "no-div-regex": 0,          // disallow division operators explicitly at beginning of regular expression (off by default)
     "no-else-return": 2,        // disallow else after a return in an if (off by default)
     "no-empty-function": 0,     // disallow use of empty functions
-    "no-empty-label": 0,        // disallow use of labels for anything other then loops and switches
     "no-empty-pattern": 0,      // disallow use of empty destructuring patterns
     "no-eq-null": 0,            // disallow comparisons to null without a type-checking operator (off by default)
     "no-eval": 2,               // disallow use of eval()
