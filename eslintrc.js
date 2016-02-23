@@ -1,30 +1,12 @@
 module.exports = {
   // http://eslint.org/docs/rules/
 
-  "ecmaFeatures": {
-    "arrowFunctions": true,                     // enable arrow functions
-    "binaryLiterals": true,                     // enable binary literals
-    "blockBindings": true,                      // enable let and const (aka block bindings)
-    "classes": true,                            // enable classes
-    "defaultParams": false,                     // enable default function parameters
-    "destructuring": false,                     // enable destructuring
-    "forOf": true,                              // enable for-of loops
-    "generators": true,                         // enable generators
-    "modules": false,                           // enable modules and global strict mode
-    "objectLiteralComputedProperties": false,   // enable computed object literal property names
-    "objectLiteralDuplicateProperties": false,  // enable duplicate object literal properties in strict mode
-    "objectLiteralShorthandMethods": true,      // enable object literal shorthand methods
-    "objectLiteralShorthandProperties": true,   // enable object literal shorthand properties
-    "octalLiterals": true,                      // enable octal literals
-    "regexUFlag": false,                        // enable the regular expression u flag
-    "regexYFlag": false,                        // enable the regular expression y flag
-    "restParams": false,                        // enable the rest parameters
-    "spread": false,                            // enable the spread operator
-    "superInFunctions": false,                  // enable super references inside of functions
-    "templateStrings": true,                    // enable template strings
-    "unicodeCodePointEscapes": false,           // enable code point escapes
-    "globalReturn": false,                      // allow return statements in the global scope
-    "jsx": false                                // enable JSX
+  "parserOptions": {
+    "ecmaVersion": 6,           // the version of ECMAScript you want to use
+    "ecmaFeatures": {
+      "globalReturn": false,    // allow return statements in the global scope
+      "jsx": false              // enable JSX
+    },
   },
 
   "env": {
@@ -41,7 +23,7 @@ module.exports = {
     "meteor": false,      // meteor global variables.
     "mongo": false,       // mongo global variables.
     "applescript": false, // applescript global variables.
-    "es6": false          // enable all ECMAScript 6 features except for modules.
+    "es6": true           // enable all ECMAScript 6 features except for modules.
   },
 
   "globals": {
