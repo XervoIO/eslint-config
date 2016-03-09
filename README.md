@@ -42,5 +42,5 @@ MIT. Copyright (c) [Modulus](https://modulus.io).
 [badge]: https://cdn.rawgit.com/onmodulus/eslint-config/master/badge.svg
 
 [version]: https://www.npmjs.com/package/eslint-config-modulus
-[build]: https://travis-ci.org/onmodulus/eslint-config
+[build]: https://travis-ci.org/onmodulus/eslint-config.svg?branch=master
 [license]: https://raw.githubusercontent.com/onmodulus/eslint-config/master/LICENSE
