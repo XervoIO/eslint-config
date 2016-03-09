@@ -13,7 +13,7 @@
   "peerDependencies": {
     "eslint": "~2.2.0",
     "eslint-plugin-hapi": "4.0.0",
-    "eslint-plugin-promise": "1.0.8"
+    "eslint-plugin-promise": "1.1.0"
   },
   "scripts": {
     "test": "lab -c"
