@@ -158,6 +158,7 @@ module.exports = {
     "no-catch-shadow": 0,             // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
     "no-delete-var": 2,               // disallow deletion of variables
     "no-label-var": 2,                // disallow labels that share a name with a variable
+    "no-restricted-globals": 0,       // Disallow specific global variables
     "no-shadow": [2, { "builtinGlobals": true, "allow": ["err", "error"] }], // disallow declaration of variables already declared in the outer scope
     "no-shadow-restricted-names": 0,  // disallow shadowing of names such as arguments
     "no-undef": 2,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
@@ -208,6 +209,7 @@ module.exports = {
     "new-cap": [2, { "newIsCap": true, "capIsNew": false }], // require a capital letter for constructors
     "new-parens": 0,                  // disallow the omission of parentheses when invoking a constructor with no arguments
     "newline-after-var": 0,           // allow/disallow an empty newline after var statement (off by default)
+    "newline-before-return": 0,       // Require newline before return statement
     "newline-per-chained-call": 0,    // enforce newline after each call when chaining the calls
     "no-array-constructor": 0,        // disallow use of the Array constructor
     "no-continue": 0,                 // disallow use of the continue statement (off by default)
@@ -283,4 +285,4 @@ module.exports = {
     "no-bitwise": 0,      // disallow use of bitwise operators (off by default)
     "no-plusplus": 0      // disallow use of unary operators, ++ and -- (off by default)
   }
-}
+};
