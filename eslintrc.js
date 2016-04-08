@@ -198,7 +198,7 @@ module.exports = {
     "func-names": 0,                  // require function expressions to have a name (off by default)
     "func-style": 0,                  // enforces use of function declarations or expressions (off by default)
     "id-blacklist": 0,                // blacklist certain identifiers to prevent them being used
-    "id-length": 0,                   // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
+    "id-length": [2, { "exceptions": "abijxyz".split('') }], // this option enforces minimum and maximum identifier lengths (variable names, property names etc.)
     "id-match": 0,                    // require identifiers to match the provided regular expression
     "indent": [2, 2, { "SwitchCase": 1 }], // this option sets a specific tab width for your code (off by default)
     "jsx-quotes": [0, "prefer-double"], // specify whether double or single quotes should be used in JSX attributes
