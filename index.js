@@ -37,20 +37,19 @@ module.exports = {
   ],
 
   'rules': {
-    ////////// hapi //////////
+    // hapi
     'hapi/hapi-capitalize-modules': 2,  // enforce the capitalization of imported module variables
     'hapi/hapi-for-you': 2,             // restrict iterator variable names, and nesting
     'hapi/hapi-scope-start': 0,         // enforce new line at the beginning of function scope
     'hapi/no-arrowception': 2,          // prevent arrow functions that implicitly create arrow functions
 
-    ////////// promise //////////
+    // promise
     'promise/param-names': 2,   // enforce standard parameter names for Promise constructors
     'promise/always-return': 2, // Ensure that inside a then() you make sure to return a new promise or value
     'promise/always-catch': 0,  // Deprecated
     'promise/catch-or-return': 2,  // Ensure that each time a then() is applied to a promise, a catch() is applied as well. Exceptions are made if you are returning that promise.
 
-    ////////// Possible Errors //////////
-
+    // Possible Errors
     'comma-dangle': [2, 'never'],               // disallow trailing commas in object literals
     'no-cond-assign': 2,                        // disallow assignment in conditional expressions
     'no-console': 1,                            // disallow use of console (off by default in the node environment)
@@ -80,9 +79,7 @@ module.exports = {
     'valid-typeof': 2,                          // Ensure that the results of typeof are compared against a valid string
     'no-unexpected-multiline': 2,               // Avoid code that looks like two expressions but is actually one (off by default)
 
-
-    ////////// Best Practices //////////
-
+    // Best Practices
     'accessor-pairs': 0,        // enforces getter/setter pairs in objects (off by default)
     'block-scoped-var': 2,      // treat var statements as if they were block scoped (off by default)
     'complexity': 0,            // specify the maximum cyclomatic complexity allowed in a program (off by default)
@@ -148,14 +145,10 @@ module.exports = {
     'wrap-iife': [2, 'any'],    // require immediate function invocation to be wrapped in parentheses (off by default)
     'yoda': 0,                  // require or disallow Yoda conditions
 
-
-    ////////// Strict Mode //////////
-
+    // Strict Mode
     'strict': 0,          // controls location of Use Strict Directives
 
-
-    ////////// Variables //////////
-
+    // Variables
     'init-declarations': 0,           // enforce or disallow variable initializations at definition
     'no-catch-shadow': 0,             // disallow the catch clause parameter name being the same as a variable in the outer scope (off by default in the node environment)
     'no-delete-var': 2,               // disallow deletion of variables
@@ -169,9 +162,7 @@ module.exports = {
     'no-unused-vars': [2, {'vars': 'all', 'args': 'none'}], // disallow declaration of variables that are not used in the code
     'no-use-before-define': 2,        // disallow use of variables before they are defined
 
-
-    ////////// Node.js //////////
-
+    // Node.js
     'callback-return': 2,       // enforce return after a callback
     'global-require': 2,        // enforce require() on top-level module scope
     'handle-callback-err': 2,   // enforces error handling in callbacks (off by default) (on by default in the node environment)
@@ -183,9 +174,7 @@ module.exports = {
     'no-restricted-modules': 0, // restrict usage of specified node modules (off by default)
     'no-sync': 1,               // disallow use of synchronous methods (off by default)
 
-
-    ////////// Stylistic Issues //////////
-
+    // Stylistic Issues
     'array-bracket-spacing': [2, 'never'], // enforce spacing inside array brackets (off by default)
     'array-callback-return': 0,       // Enforces return statements in callbacks of array's methods
     'block-spacing': [2, 'always'],   // disallow or enforce spaces inside of single line blocks (fixable)
@@ -251,9 +240,7 @@ module.exports = {
     'spaced-comment': [2, 'always'],  // require or disallow a space immediately following the // or /* in a comment (off by default)
     'wrap-regex': 0,                  // require regex literals to be wrapped in parentheses (off by default)
 
-
-    ////////// ECMAScript 6 //////////
-
+    // ECMAScript 6
     'arrow-body-style': 0,       // require braces in arrow function body
     'arrow-parens': 0,           // require parens in arrow function arguments
     'arrow-spacing': 0,          // require space before/after arrow function's arrow (fixable)
@@ -279,9 +266,7 @@ module.exports = {
     'template-curly-spacing': 0, // enforce spacing around embedded expressions of template strings
     'yield-star-spacing': 0,     // enforce spacing around the * in yield* expressions
 
-
-    ////////// Legacy //////////
-
+    // Legacy
     'max-depth': 0,       // specify the maximum depth that blocks can be nested (off by default)
     'max-len': [1, 80, 2], // specify the maximum length of a line in your program (off by default)
     'max-params': 0,      // limits the number of parameters that can be used in the function declaration. (off by default)
