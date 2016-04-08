@@ -138,6 +138,7 @@ module.exports = {
     "no-unused-labels": 0,      // disallow unused labels
     "no-useless-call": 1,       // disallow unnecessary .call() and .apply()
     "no-useless-concat": 2,     // disallow unnecessary concatenation of literals or template literals
+    "no-useless-escape": 0,     // disallow unnecessary usage of escape character
     "no-void": 0,               // disallow use of void operator (off by default)
     "no-warning-comments": 0,   // disallow usage of configurable warning terms in comments, e.g. TODO or FIXME (off by default)
     "no-with": 0,               // disallow use of the with statement
@@ -206,6 +207,7 @@ module.exports = {
     "lines-around-comment": 0,        // enforces empty lines around comments (off by default)
     "linebreak-style": 0,             // disallow mixed 'LF' and 'CRLF' as linebreaks (off by default)
     "max-nested-callbacks": 0,        // specify the maximum depth callbacks can be nested (off by default)
+    "max-statements-per-line": 0,     // specify the maximum number of statements allowed per line
     "new-cap": [2, { "newIsCap": true, "capIsNew": false }], // require a capital letter for constructors
     "new-parens": 0,                  // disallow the omission of parentheses when invoking a constructor with no arguments
     "newline-after-var": 0,           // allow/disallow an empty newline after var statement (off by default)
@@ -260,6 +262,7 @@ module.exports = {
     "no-confusing-arrow": 0,     // disallow arrow functions where they could be confused with comparisons
     "no-const-assign": 0,        // disallow modifying variables that are declared using const
     "no-dupe-class-members": 0,  // disallow duplicate name in class members
+    "no-duplicate-imports": 0,   // disallow duplicate module imports
     "no-new-symbol": 0,          // disallow use of the new operator with the Symbol object
     "no-this-before-super": 0,   // disallow to use this/super before super() calling in constructors (off by default)
     "no-useless-constructor": 0, // disallow unnecessary constructor
