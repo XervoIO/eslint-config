@@ -1,13 +1,12 @@
 /* eslint-disable max-len */
-module.exports = {
-  // http://eslint.org/docs/rules/
 
+module.exports = {
   'parserOptions': {
     'ecmaVersion': 6,           // the version of ECMAScript you want to use
     'ecmaFeatures': {
       'globalReturn': false,    // allow return statements in the global scope
       'jsx': false              // enable JSX
-    },
+    }
   },
 
   'env': {
@@ -112,7 +111,7 @@ module.exports = {
     'no-labels': 0,             // disallow use of labeled statements
     'no-lone-blocks': 2,        // disallow unnecessary nested blocks
     'no-loop-func': 2,          // disallow creation of functions within loops
-    'no-magic-numbers': [2, { ignore: [-1,0,1,2] }], // disallow the use of magic numbers
+    'no-magic-numbers': [2, { ignore: [-1, 0, 1, 2] }], // disallow the use of magic numbers
     'no-multi-spaces': 2,       // disallow use of multiple spaces
     'no-multi-str': 2,          // disallow use of multiline strings
     'no-native-reassign': 2,    // disallow reassignments of native objects
@@ -159,7 +158,7 @@ module.exports = {
     'no-undef': 2,                    // disallow use of undeclared variables unless mentioned in a /*global */ block
     'no-undef-init': 2,               // disallow use of undefined when initializing variables
     'no-undefined': 2,                // disallow use of undefined variable (off by default)
-    'no-unused-vars': [2, {'vars': 'all', 'args': 'none'}], // disallow declaration of variables that are not used in the code
+    'no-unused-vars': [2, { 'vars': 'all', 'args': 'none' }], // disallow declaration of variables that are not used in the code
     'no-use-before-define': 2,        // disallow use of variables before they are defined
 
     // Node.js
@@ -268,6 +267,7 @@ module.exports = {
 
     // Legacy
     'max-depth': 0,       // specify the maximum depth that blocks can be nested (off by default)
+    // eslint-disable-next-line no-magic-numbers
     'max-len': [1, 80, 2], // specify the maximum length of a line in your program (off by default)
     'max-params': 0,      // limits the number of parameters that can be used in the function declaration. (off by default)
     'max-statements': 0,  // specify the maximum number of statement allowed in a function (off by default)
