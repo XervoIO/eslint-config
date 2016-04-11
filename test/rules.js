@@ -4,7 +4,7 @@ const Code = require('code');
 const Lab = require('lab');
 
 const Defaults = require('eslint/conf/eslint.json')
-const Local = require('../eslintrc')
+const Local = require('../')
 
 var lab = exports.lab = Lab.script();
 

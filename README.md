@@ -1,8 +1,8 @@
 # Modulus - ESLint Shareable Config
 
-[![version](https://img.shields.io/npm/v/eslint-config-modulus.svg?style=flat-square)][version]
-[![build](https://img.shields.io/travis/onmodulus/eslint-config.svg?style=flat-square)][build]
-[![license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
+[![version](https://img.shields.io/npm/v/eslint-config-modulus.svg)][version]
+[![build](https://img.shields.io/travis/onmodulus/eslint-config.svg?branch=master)][build]
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)][license]
 
 JavaScript Modulus Style - [ESLint Shareable Config][shareable-configs]
 
@@ -42,5 +42,5 @@ MIT. Copyright (c) [Modulus](https://modulus.io).
 [badge]: https://cdn.rawgit.com/onmodulus/eslint-config/master/badge.svg
 
 [version]: https://www.npmjs.com/package/eslint-config-modulus
-[build]: https://travis-ci.org/onmodulus/eslint-config.svg?branch=master
+[build]: https://travis-ci.org/onmodulus/eslint-config
 [license]: https://raw.githubusercontent.com/onmodulus/eslint-config/master/LICENSE
