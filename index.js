@@ -182,7 +182,7 @@ module.exports = {
     'comma-style': 0,                 // enforce one true comma style (off by default)
     'computed-property-spacing': 0,   // require or disallow padding inside computed properties (off by default)
     'consistent-this': 0,             // enforces consistent naming when capturing the current execution context (off by default)
-    'eol-last': 0,                    // enforce newline at the end of file, with no multiple empty lines
+    'eol-last': 2,                    // enforce newline at the end of file, with no multiple empty lines
     'func-names': 0,                  // require function expressions to have a name (off by default)
     'func-style': 0,                  // enforces use of function declarations or expressions (off by default)
     'id-blacklist': 0,                // blacklist certain identifiers to prevent them being used
