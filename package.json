@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-modulus",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "JavaScript Modulus Style - ESLint Shareable Config",
   "main": "index.js",
   "repository": {
