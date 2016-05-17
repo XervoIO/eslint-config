@@ -74,6 +74,7 @@ module.exports = {
     'no-sparse-arrays': 2,                      // disallow sparse arrays
     'no-unexpected-multiline': 2,               // Avoid code that looks like two expressions but is actually one (off by default)
     'no-unreachable': 2,                        // disallow unreachable statements after a return, throw, continue, or break statement
+    'no-unsafe-finally': 2,                     // disallow control flow statements in finally blocks
     'use-isnan': 2,                             // disallow comparisons with the value NaN
     'valid-jsdoc': 0,                           // Ensure JSDoc comments are valid (off by default)
     'valid-typeof': 2,                          // Ensure that the results of typeof are compared against a valid string
@@ -225,6 +226,7 @@ module.exports = {
     'no-unneeded-ternary': 2,         // disallow the use of ternary operators when a simpler alternative exists
     'no-whitespace-before-property': 0, // disallow whitespace before properties
     'object-curly-spacing': [2, 'always'], // require or disallow padding inside curly braces (fixable)
+    'object-property-newline': 0,     // enforce placing object properties on separate lines
     'one-var': 0,                     // allow just one var statement per function (off by default)
     'one-var-declaration-per-line': 0, // require or disallow an newline around variable declarations
     'operator-assignment': 0,         // require assignment operator shorthand where possible or prohibit it entirely (off by default)
@@ -259,6 +261,7 @@ module.exports = {
     'no-new-symbol': 0,          // disallow use of the new operator with the Symbol object
     'no-restricted-imports': 0,  // restrict usage of specified node imports
     'no-this-before-super': 0,   // disallow to use this/super before super() calling in constructors (off by default)
+    'no-useless-computed-key': 0, // disallow unnecessary computed property keys in object literals
     'no-useless-constructor': 0, // disallow unnecessary constructor
     'no-var': 0,                 // require let or const instead of var (off by default)
     'object-shorthand': 0,       // require method and property shorthand syntax for object literals (off by default)
