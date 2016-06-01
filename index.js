@@ -43,10 +43,11 @@ module.exports = {
     'hapi/no-arrowception': 2,          // prevent arrow functions that implicitly create arrow functions
 
     // promise
-    'promise/param-names': 2,     // enforce standard parameter names for Promise constructors
     'promise/always-return': 2,   // Ensure that inside a then() you make sure to return a new promise or value
     'promise/always-catch': 0,    // Deprecated
     'promise/catch-or-return': 2, // Ensure that each time a then() is applied to a promise, a catch() is applied as well. Exceptions are made if you are returning that promise.
+    'promise/no-native': 0,       // Ensure that Promise is included fresh in each file
+    'promise/param-names': 2,     // enforce standard parameter names for Promise constructors
 
     // Possible Errors
     'comma-dangle': [2, 'never'],               // disallow trailing commas in object literals
