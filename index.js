@@ -71,6 +71,7 @@ module.exports = {
     'no-irregular-whitespace': 2,               // disallow irregular whitespace outside of strings and comments
     'no-negated-in-lhs': 2,                     // disallow negation of the left operand of an in expression
     'no-obj-calls': 2,                          // disallow the use of object properties of the global object (Math and JSON) as functions
+    'no-prototype-builtins': 2,                 // Disallow use of Object.prototypes builtins directly
     'no-regex-spaces': 2,                       // disallow multiple spaces in a regular expression literal
     'no-sparse-arrays': 2,                      // disallow sparse arrays
     'no-unexpected-multiline': 2,               // Avoid code that looks like two expressions but is actually one (off by default)
@@ -246,6 +247,7 @@ module.exports = {
     'space-infix-ops': 2,             // require spaces around operators
     'space-unary-ops': 2,             // require or disallow spaces before/after unary operators (words on by default, nonwords off by default)
     'spaced-comment': [2, 'always'],  // require or disallow a space immediately following the // or /* in a comment (off by default)
+    'unicode-bom': 2,                 // require or disallow the Unicode BOM
     'wrap-regex': 0,                  // require regex literals to be wrapped in parentheses (off by default)
 
     // ECMAScript 6
@@ -264,6 +266,7 @@ module.exports = {
     'no-this-before-super': 0,   // disallow to use this/super before super() calling in constructors (off by default)
     'no-useless-computed-key': 0, // disallow unnecessary computed property keys in object literals
     'no-useless-constructor': 0, // disallow unnecessary constructor
+    'no-useless-rename': 2,      // disallow renaming import, export, and destructured assignments to the same name
     'no-var': 0,                 // require let or const instead of var (off by default)
     'object-shorthand': 0,       // require method and property shorthand syntax for object literals (off by default)
     'prefer-arrow-callback': 0,  // suggest using arrow functions as callbacks
