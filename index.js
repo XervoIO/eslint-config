@@ -200,6 +200,7 @@ module.exports = {
     'max-depth': 0,                   // specify the maximum depth that blocks can be nested (off by default)
     // eslint-disable-next-line no-magic-numbers
     'max-len': [1, 80, 2],            // specify the maximum length of a line in your program (off by default)
+    'max-lines': 0,                   // enforce a maximum file length
     'max-nested-callbacks': 0,        // specify the maximum depth callbacks can be nested (off by default)
     'max-params': 0,                  // limits the number of parameters that can be used in the function declaration. (off by default)
     'max-statements': 0,              // specify the maximum number of statement allowed in a function (off by default)
@@ -214,6 +215,7 @@ module.exports = {
     'no-continue': 0,                 // disallow use of the continue statement (off by default)
     'no-inline-comments': 0,          // disallow comments inline after code (off by default)
     'no-lonely-if': 2,                // disallow if as the only statement in an else block (off by default)
+    'no-mixed-operators': 2,          // disallow mixes of different operators
     'no-mixed-spaces-and-tabs': 2,    // disallow mixed spaces and tabs for indentation
     'no-multiple-empty-lines': [2, { max: 1 }], // disallow multiple empty lines (off by default)
     'no-negated-condition': 2,        // disallow negated conditions
@@ -227,6 +229,7 @@ module.exports = {
     'no-underscore-dangle': 2,        // disallow dangling underscores in identifiers
     'no-unneeded-ternary': 2,         // disallow the use of ternary operators when a simpler alternative exists
     'no-whitespace-before-property': 0, // disallow whitespace before properties
+    'object-curly-newline': 0,        // enforce consistent line breaks inside braces
     'object-curly-spacing': [2, 'always'], // require or disallow padding inside curly braces (fixable)
     'object-property-newline': 0,     // enforce placing object properties on separate lines
     'one-var': 0,                     // allow just one var statement per function (off by default)
@@ -276,6 +279,7 @@ module.exports = {
     'prefer-spread': 0,          // suggest using the spread operator instead of .apply()
     'prefer-template': 0,        // suggest using template literals instead of strings concatenation
     'require-yield': 0,          // disallow generator functions that do not have yield
+    'rest-spread-spacing': 0,    // enforce spacing between rest and spread operators and their expressions 
     'template-curly-spacing': 0, // enforce spacing around embedded expressions of template strings
     'yield-star-spacing': 0      // enforce spacing around the * in yield* expressions
   }
