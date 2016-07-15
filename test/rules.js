@@ -3,8 +3,8 @@ const Util = require('util');
 const Code = require('code');
 const Lab = require('lab');
 
-const Defaults = require('eslint/conf/eslint.json')
-const Local = require('../')
+const Defaults = require('eslint/conf/eslint.json');
+const Local = require('../');
 
 var lab = exports.lab = Lab.script();
 
@@ -17,15 +17,15 @@ describe('rules', function () {
   var rules;
 
   before(function (done) {
-    rules = Local.plugins.reduce(function (rules, name) {
-      var plugin = require(Util.format('eslint-plugin-%s', name));
-      return rules.concat(Object.keys(plugin.rules).map(function (rule) {
+    rules = Local.plugins.reduce(function (acc, name) {
+      // eslint-disable-next-line global-require
+      const Plugin = require(Util.format('eslint-plugin-%s', name));
+      return acc.concat(Object.keys(Plugin.rules).map(function (rule) {
         return [name, rule].join('/');
       }));
     }, []).concat(Object.keys(Defaults.rules));
     done();
   });
-
 
   it('defines all rules', function (done) {
     rules.forEach(function (rule) {
