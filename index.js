@@ -229,7 +229,10 @@ module.exports = {
     'no-underscore-dangle': 2,        // disallow dangling underscores in identifiers
     'no-unneeded-ternary': 2,         // disallow the use of ternary operators when a simpler alternative exists
     'no-whitespace-before-property': 0, // disallow whitespace before properties
-    'object-curly-newline': 0,        // enforce consistent line breaks inside braces
+    'object-curly-newline': [2, {
+      ObjectExpression: { multiline: true, minProperties: 3 },
+      ObjectPattern: { multiline: true, minProperties: 5 }
+    }],                               // enforce consistent line breaks inside braces
     'object-curly-spacing': [2, 'always'], // require or disallow padding inside curly braces (fixable)
     'object-property-newline': 0,     // enforce placing object properties on separate lines
     'one-var': 0,                     // allow just one var statement per function (off by default)
@@ -279,7 +282,7 @@ module.exports = {
     'prefer-spread': 0,          // suggest using the spread operator instead of .apply()
     'prefer-template': 0,        // suggest using template literals instead of strings concatenation
     'require-yield': 0,          // disallow generator functions that do not have yield
-    'rest-spread-spacing': 0,    // enforce spacing between rest and spread operators and their expressions 
+    'rest-spread-spacing': 0,    // enforce spacing between rest and spread operators and their expressions
     'template-curly-spacing': 0, // enforce spacing around embedded expressions of template strings
     'yield-star-spacing': 0      // enforce spacing around the * in yield* expressions
   }
