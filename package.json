@@ -18,6 +18,9 @@
   "scripts": {
     "test": "lab -c"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "keywords": [
     "modulus",
     "style checker",
