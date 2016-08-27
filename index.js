@@ -74,9 +74,11 @@ module.exports = {
     'no-prototype-builtins': 2,                 // Disallow use of Object.prototypes builtins directly
     'no-regex-spaces': 2,                       // disallow multiple spaces in a regular expression literal
     'no-sparse-arrays': 2,                      // disallow sparse arrays
+    'no-template-curly-in-string': 0,           // disallow template literal placeholder syntax in regular strings
     'no-unexpected-multiline': 2,               // Avoid code that looks like two expressions but is actually one (off by default)
     'no-unreachable': 2,                        // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unsafe-finally': 2,                     // disallow control flow statements in finally blocks
+    'no-unsafe-negation': 0,                    // disallow negating the left operand of relational operators
     'use-isnan': 2,                             // disallow comparisons with the value NaN
     'valid-jsdoc': 0,                           // Ensure JSDoc comments are valid (off by default)
     'valid-typeof': 2,                          // Ensure that the results of typeof are compared against a valid string
@@ -85,6 +87,7 @@ module.exports = {
     'accessor-pairs': 0,        // enforces getter/setter pairs in objects (off by default)
     'array-callback-return': 0, // Enforces return statements in callbacks of array's methods
     'block-scoped-var': 2,      // treat var statements as if they were block scoped (off by default)
+    'class-methods-use-this': 0, // enforce that class methods utilize this
     'complexity': 0,            // specify the maximum cyclomatic complexity allowed in a program (off by default)
     'consistent-return': 0,     // require return statements to either always or never specify values
     'curly': [2, 'multi-line'], // Single-line no curlys; multiline requires curly
@@ -107,6 +110,7 @@ module.exports = {
     'no-extra-label': 0,        // disallow unnecessary labels
     'no-fallthrough': 2,        // disallow fallthrough of case statements
     'no-floating-decimal': 2,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
+    'no-global-assign': 0,      // disallow assignments to native objects or read-only global variables
     'no-implicit-coercion': 2,  // disallow the type conversions with shorter notations
     'no-implicit-globals': 0,   // disallow var and named functions in global scope
     'no-implied-eval': 2,       // disallow use of eval()-like methods
@@ -186,6 +190,7 @@ module.exports = {
     'computed-property-spacing': 0,   // require or disallow padding inside computed properties (off by default)
     'consistent-this': 0,             // enforces consistent naming when capturing the current execution context (off by default)
     'eol-last': 2,                    // enforce newline at the end of file, with no multiple empty lines
+    'func-call-spacing': 0,           // require or disallow spacing between function identifiers and their invocations
     'func-names': 0,                  // require function expressions to have a name (off by default)
     'func-style': 0,                  // enforces use of function declarations or expressions (off by default)
     'id-blacklist': 0,                // blacklist certain identifiers to prevent them being used
@@ -204,6 +209,7 @@ module.exports = {
     'max-nested-callbacks': 0,        // specify the maximum depth callbacks can be nested (off by default)
     'max-params': 0,                  // limits the number of parameters that can be used in the function declaration. (off by default)
     'max-statements': 0,              // specify the maximum number of statement allowed in a function (off by default)
+    'multiline-ternary': 0,           // enforce newlines between operands of ternary expressions
     'max-statements-per-line': 0,     // specify the maximum number of statements allowed per line
     'new-cap': [2, { 'newIsCap': true, 'capIsNew': false }], // require a capital letter for constructors
     'new-parens': 0,                  // disallow the omission of parentheses when invoking a constructor with no arguments
@@ -223,6 +229,7 @@ module.exports = {
     'no-new-object': 0,               // disallow use of the Object constructor
     'no-plusplus': 0,                 // disallow use of unary operators, ++ and -- (off by default)
     'no-restricted-syntax': 0,        // disallow use of certain syntax in code
+    'no-tabs': 0,                     // disallow tabs in file
     'no-spaced-func': 2,              // disallow space between function identifier and application
     'no-ternary': 0,                  // disallow the use of ternary operators (off by default)
     'no-trailing-spaces': 2,          // disallow trailing whitespace at the end of lines
@@ -241,8 +248,10 @@ module.exports = {
     'quotes': [2, 'single', 'avoid-escape'], // specify whether double or single quotes should be used
     'require-jsdoc': 0,               // Require JSDoc comment
     'semi': 2,                        // require or disallow use of semicolons instead of ASI
+    'sort-keys': 0,                   // requires object keys to be sorted
     'semi-spacing': 0,                // enforce spacing before and after semicolons
     'sort-imports': 0,                // sort import declarations within module
+    'symbol-description': 0,          // require symbol descriptions
     'sort-vars': 0,                   // sort variables within the same declaration block (off by default)
     'space-before-blocks': [2, 'always'], // require or disallow space before blocks (off by default)
     'space-before-function-paren': [2, { 'anonymous': 'always', 'named': 'never' }], // require or disallow space before function opening parenthesis (off by default)
