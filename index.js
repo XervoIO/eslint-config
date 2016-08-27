@@ -69,7 +69,7 @@ module.exports = {
     'no-inner-declarations': [2, 'functions'],  // disallow function or variable declarations in nested blocks
     'no-invalid-regexp': 2,                     // disallow invalid regular expression strings in the RegExp constructor
     'no-irregular-whitespace': 2,               // disallow irregular whitespace outside of strings and comments
-    'no-negated-in-lhs': 2,                     // disallow negation of the left operand of an in expression
+    'no-negated-in-lhs': 2,                     // (deprecated) disallow negation of the left operand of an in expression
     'no-obj-calls': 2,                          // disallow the use of object properties of the global object (Math and JSON) as functions
     'no-prototype-builtins': 2,                 // Disallow use of Object.prototypes builtins directly
     'no-regex-spaces': 2,                       // disallow multiple spaces in a regular expression literal
@@ -78,7 +78,7 @@ module.exports = {
     'no-unexpected-multiline': 2,               // Avoid code that looks like two expressions but is actually one (off by default)
     'no-unreachable': 2,                        // disallow unreachable statements after a return, throw, continue, or break statement
     'no-unsafe-finally': 2,                     // disallow control flow statements in finally blocks
-    'no-unsafe-negation': 0,                    // disallow negating the left operand of relational operators
+    'no-unsafe-negation': 2,                    // disallow negating the left operand of relational operators
     'use-isnan': 2,                             // disallow comparisons with the value NaN
     'valid-jsdoc': 0,                           // Ensure JSDoc comments are valid (off by default)
     'valid-typeof': 2,                          // Ensure that the results of typeof are compared against a valid string
@@ -110,7 +110,7 @@ module.exports = {
     'no-extra-label': 0,        // disallow unnecessary labels
     'no-fallthrough': 2,        // disallow fallthrough of case statements
     'no-floating-decimal': 2,   // disallow the use of leading or trailing decimal points in numeric literals (off by default)
-    'no-global-assign': 0,      // disallow assignments to native objects or read-only global variables
+    'no-global-assign': 2,      // disallow assignments to native objects or read-only global variables
     'no-implicit-coercion': 2,  // disallow the type conversions with shorter notations
     'no-implicit-globals': 0,   // disallow var and named functions in global scope
     'no-implied-eval': 2,       // disallow use of eval()-like methods
@@ -122,7 +122,7 @@ module.exports = {
     'no-magic-numbers': [2, { ignore: [-1, 0, 1, 2] }], // disallow the use of magic numbers
     'no-multi-spaces': 2,       // disallow use of multiple spaces
     'no-multi-str': 2,          // disallow use of multiline strings
-    'no-native-reassign': 2,    // disallow reassignments of native objects
+    'no-native-reassign': 2,    // (deprecated) disallow reassignments of native objects
     'no-new': 0,                // disallow use of new operator when not part of the assignment or comparison
     'no-new-func': 0,           // disallow use of new operator for Function object
     'no-new-wrappers': 2,       // disallows creating new instances of String, Number, and Boolean
@@ -190,7 +190,7 @@ module.exports = {
     'computed-property-spacing': 0,   // require or disallow padding inside computed properties (off by default)
     'consistent-this': 0,             // enforces consistent naming when capturing the current execution context (off by default)
     'eol-last': 2,                    // enforce newline at the end of file, with no multiple empty lines
-    'func-call-spacing': 0,           // require or disallow spacing between function identifiers and their invocations
+    'func-call-spacing': 2,           // require or disallow spacing between function identifiers and their invocations
     'func-names': 0,                  // require function expressions to have a name (off by default)
     'func-style': 0,                  // enforces use of function declarations or expressions (off by default)
     'id-blacklist': 0,                // blacklist certain identifiers to prevent them being used
@@ -230,7 +230,7 @@ module.exports = {
     'no-plusplus': 0,                 // disallow use of unary operators, ++ and -- (off by default)
     'no-restricted-syntax': 0,        // disallow use of certain syntax in code
     'no-tabs': 0,                     // disallow tabs in file
-    'no-spaced-func': 2,              // disallow space between function identifier and application
+    'no-spaced-func': 2,              // (deprecated) disallow space between function identifier and application
     'no-ternary': 0,                  // disallow the use of ternary operators (off by default)
     'no-trailing-spaces': 2,          // disallow trailing whitespace at the end of lines
     'no-underscore-dangle': 2,        // disallow dangling underscores in identifiers
