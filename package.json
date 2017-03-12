@@ -52,7 +52,7 @@
     "eslint": "~3.4.0",
     "eslint-plugin-hapi": "4.0.0",
     "eslint-plugin-promise": "2.0.1",
-    "lab": "~11.0.1",
+    "lab": "~13.0.1",
     "lodash.assign": "4.2.0",
     "temporary-directory": "1.0.2"
   }
